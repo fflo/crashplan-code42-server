@@ -48,7 +48,10 @@ docker run -d --name crashplan-code42-server \
 
 ### Hints
 Port 4280 can be added to the list above, if insecure web access (http) is needed.
-Admin Console can be access using https://[publish-IP]:4285/console [2]
+
+Admin Console configuration URL: https://[publish-IP]:4285/console
+
+First Installation Howto: [Activate your Code42 Server][2]
 
 ### What's new
 Starting with version 7 code42-server (proserver) is now running as user crashplan instead of root for security reasons.
