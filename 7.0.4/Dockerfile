@@ -34,8 +34,14 @@ RUN set -ex ; \
         ./install.sh -u --accept-eula ; \
         rm -rf /tmp/code42server
 
-# define expose ports and volumes
+# link old paths
 USER root
+RUN set -ex ; \
+        ln -s /crashplan/proserver/server /opt/proserver ; \
+        ln -s /crashplan/proserver/data /var/opt/proserver ; \
+        ln -s /crashplan/proserver/log /var/log/proserver
+
+# define expose ports and volumes
 EXPOSE 4280 4282 4285 4287
 VOLUME ["/crashplan/proserver/data","/crashplan/proserver/log","/crashplan/proserver/server/db"]
 
