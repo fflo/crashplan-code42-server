@@ -1,4 +1,4 @@
-FROM mykro/java8-jre:latest
+FROM fflo/java8-server-jre:latest
 
 COPY run.sh /
 

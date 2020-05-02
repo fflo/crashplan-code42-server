@@ -1,15 +1,9 @@
 #!/bin/bash
 
-if [[ ${TIMEZONE} ]]; then
-  # set timezone
-  rm /etc/localtime
-  echo ${TIMEZONE} > /etc/timezone
-  dpkg-reconfigure -f noninteractive tzdata
-fi
-
 # Start the proserver
-/opt/proserver/bin/proserver start
+/crashplan/proserver/server/bin/proserver start
 status=$?
+
 if [ $status -ne 0 ]; then
   echo "Failed to start proserver: $status"
   exit $status
