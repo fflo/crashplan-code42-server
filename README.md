@@ -4,10 +4,13 @@ This docker container provides Code42 for Enterprise: Crashplan Server (proserve
 
 ### Tags
 
-- `7.0.4, latest`
+- `7.0.5, latest`
+- `7.0.4`
 - `7.0.3`
 - `7.0.2`
 - `7.0.0`
+- `6.8.9`
+- `6.8.8`
 - `6.8.7`
 - `6.8.4`
 - `6.7.4`
