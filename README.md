@@ -4,7 +4,8 @@ This docker container provides Code42 for Enterprise: Crashplan Server (proserve
 
 ### Tags
 
-- `7.0.5, latest`
+- `8.2.6, latest`
+- `7.0.5`
 - `7.0.4`
 - `7.0.3`
 - `7.0.2`
@@ -23,7 +24,7 @@ This docker container provides Code42 for Enterprise: Crashplan Server (proserve
 
 ### Example Usage
 
-#### Version 7
+#### Version 7 and higher
 ```
 docker run -d --name crashplan-code42-server \
   -p 4282:4282 \
@@ -57,7 +58,7 @@ Admin Console configuration URL: https://[publish-IP]:4285/console
 First Installation Howto: [Activate your Code42 Server][2]
 
 ### What's new
-Starting with version 7 code42-server (proserver) is now running as user crashplan instead of root for security reasons.
+Starting with version 7 or higher, code42-server (proserver) is now running as user crashplan instead of root for security reasons.
 
 ### Environment Variables
 
@@ -69,7 +70,7 @@ Default Timezone: UTC
 
 ### Mapped Volumes
 
-#### Version 7
+#### Version 7 or higher
 Path | Description
 --- | ---
 /crashplan/proserver/server/db | H2 database
